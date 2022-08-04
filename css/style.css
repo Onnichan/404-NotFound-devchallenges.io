@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("./size.css");
+@import url("./colors.css");
+
+/* HEADER*/
+
+html {
+  font-family: "Inconsolata";
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.header {
+  padding: 0 var(--px-container);
+}
+
+.logo-text{
+  font-size: 24px;
+}
+
+/* MAIN*/
+.content {
+  padding: var(--px-container);
+  display: flex;
+  flex-direction: column;
+  font-family: "Space Mono";
+  font-weight: 700;
+  transition: all 2s;
+  align-items: center;
+}
+
+.content__text {
+  opacity: 0.8;
+}
+
+.content__text-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: -0.035em;
+}
+
+.content__text-paragraph {
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  width: 90%;
+}
+
+.content__text-button {
+  margin-top: 50px;
+  font-weight: 700;
+  background-color: var(--light-theme-bg-button);
+  color: white;
+  padding: var(--p-button) var(--px-container);
+}
+
+.content__text-button:hover{
+  cursor: pointer;
+}
+/* END MAIN*/
+
+/* FOOTER*/
+.footer {
+  text-align: center;
+  margin-top: 3em;
+  padding: calc(var(--px-container) / 2);
+  font-size: 19px;
+  /* color: var(--light-theme-color-footer); */
+}
+
+.footer__webpage{
+  color: black;
+  font-weight: 500;
+}
+
+.footer__linkedin{
+  color: rgba(222, 26, 19, 0.626);
+  font-weight: 700;
+  /* font-family: ; */
+}
+
+@media screen and (min-width: 800px) {
+  :root {
+    --px-container: 3em;
+  }
+
+  .content {
+    flex-direction: row;
+    transition: all 2s;
+    gap: 80px;
+  }
+
+  .content__text {
+    opacity: 1;
+  }
+
+  .content__text-title {
+    /* font-size: 64px; */
+    font-size: 4vw;
+    /* line-height: 95px; */
+    line-height: 5vw;
+  }
+
+  .content__text-paragraph {
+    font-size: 24px;
+    line-height: 36px;
+    width: 60%;
+  }
+}
+
+/* @media screen and (min-width: 1100px) {
+  :root{
+    --px-container: 3em;
+  }
+} */
